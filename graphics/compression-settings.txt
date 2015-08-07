@@ -1,0 +1,20 @@
+Lair screenshots JPEG
+	Resized to 1920x1080, bicubic sharpen method
+	
+	Photoshop saving settings:
+		- 7 quality
+		- 3-pass Progressive
+	
+	Post-process:
+		jhead -purejpg -dt
+
+Other graphics PNG
+	Lair Boss graphics resized to 432x432, bicubic sharpen method
+	Regional Boss graphics resized to 576x576, bicubic sharpen method
+	
+	Photoshop saving settings:
+		- Compression: smallest
+		- Interlacing: none
+	
+	Post-process:
+		pngcrush -brute -l 9 -reduce
