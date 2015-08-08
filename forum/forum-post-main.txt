@@ -1,0 +1,194 @@
+[CENTER]
+[URL="http://tsw.nex4k.net/lairs/#enUS:organizer:eyJ2IjoiMi4wxIctREVWIiwibcSDxIBvcmdhbml6ZXLEksSBxIMxxI9sxIMic2bEjiJmY8ScOsSAxII6xKAixKvEgHNvxKLErMSkY8Sdc8S5xLfEuzAxxJJ9xI_EvjLFgcWDYzAzxYF9xYzEj3RyYcS6xKbEvcWTxLNmxL_EnW53xIM0xI9uxJ_FnmXEgzLEj8WixK_Fg8WmM8WDxIM2xYLEpMWXxYXEt8WaxaAixZ86xaTFtcWmxLDEvMSwc8W0c8WmMsWuxKXFicWZxazEj8WbOjXFqMSfxYzGjsWucMSyxJ7FpyJwxZE6W8StxbTFtiJExJtwxKfGksSuxLDGksaExbFmYWzGgMaOLMaaxpTGnE1lYXRzaGllbGTGocSdxqPEj8SyxqzGrsSwxpxIYW1txJt0aceHxrvEt8a9xLHFi8WCx4HFnsSjTGFnZmVzdMeMx5LHj8Ssx4DGk8eCxKNGaceaaW5nSXNGdcWfxr7GvMW0xqXFsMSDxqjGqmXGjl3FrmNzxLYiZW5VU8Snx7tvxb7EhMaWcseJY2nGlm50T3JkxJsixa5sb29rdcagx43FtG90xLxudWxsxI9vxJjEg8ihyKPGjg.5ew5l7"]
+[IMG]http://i61.tinypic.com/w0t9p4.jpg[/IMG]
+[/URL]
+
+[SIZE="5"][COLOR="DarkOrange"]TSW Lair Manager[/COLOR][/SIZE] [SIZE="3"][COLOR="Gray"]by Cobin[/COLOR][/SIZE]
+[SIZE="3"][COLOR="Orange"]Take the pain out of organizing lair runs[/COLOR][/SIZE]
+[/CENTER]
+
+[B][SIZE="4"][COLOR="Sienna"]Motivation[/COLOR][/SIZE][/B]
+
+So the last time I joined one of my cabal's ([I][URL="http://invinoveritas.corplaunch.com"]In Vino Veritas[/URL][/I]) lair runs, we had like 20 or so people coming.
+
+After we finished missions, it took our fragment holder [I]quite[/I] some time (talking of about a quarter of an hour) to get an overview and assign fragments to take to all people. This was when I got the idea to create a little helper tool so that:
+
+[LIST]
+[*]the fragment holder doesn't get mad while doing stupid amounts of highly repetitive and boring work and
+[*]lair runners don't have to wait ages for their call to turn in fragments and can kill bosses faster!
+[/LIST]
+
+I am aware that there is an addon for the TSW client called [URL="http://www.curse.com/tsw-mods/tsw/missionhelper"]MissionHelper[/URL], but that thing is far from optimal in my eyes:
+
+[LIST]
+[*]it only supports a maximum of 10 people by design,
+[*]it doesn't really give you a clear overview and
+[*]it only works in the English client (afaik) and also clashes with any Team Window mods like e.g. [URL="http://forums.thesecretworld.com/showthread.php?t=79381"]Five Alive[/URL], which are essential to many people.
+[/LIST]
+
+I am also aware that lairs were originally meant to be 5-man content, yet you see enough people running this in a raid or even multiple raids.
+
+
+[B][SIZE="4"][COLOR="Sienna"]Solution[/COLOR][/SIZE][/B]
+
+My approach is a tiny webapp, entirely coded in JavaScript so it doesn't require any special stuff on the server and can even be used without any server at all.
+
+[COLOR="Gray"](I know, it's not exactly a "mod", but among all the choices I had this seemed like the best subforum to post this in.)[/COLOR]
+
+This second version is a complete rewrite of the first version I wrote back in February 2015.
+
+[CENTER][COLOR="YellowGreen"][B]An instance of TSW Lair Manager is currently hosted at
+[URL="http://tsw.nex4k.net/lairs/"][COLOR="#99ff00"]http://tsw.nex4k.net/lairs/[/COLOR][/URL].[/B][/COLOR][/CENTER]
+
+It's fine if you just bookmark my instance hosted on my server and use it.
+
+But if that one becomes unavailable for any reason, please remember that you are welcome to download it from GitHub (see blue link below) and simply host it yourself or just use it offline (unzip all and double click the HTML file directly on your computer, you don't [I]have[/I] to put it on a server).
+
+There is no need for any complicated command line surgeries or other arcane witchcraft, anyone can do that :)
+
+
+[B][SIZE="4"][COLOR="Sienna"]New features in v2.0.0 beta[/COLOR][/SIZE][/B]
+
+[COLOR="Gold"][SIZE="3"]New code base[/SIZE][/COLOR]
+The code has been completely rewritten.
+
+Main priority for the first version was speed; I wanted to finish it as soon as possible, which I did in 5 days. Naturally, throwing stuff together this fast does have its drawbacks – the resulting code was tightly interwoven and very unflexible regarding possible code changes. Besides, I've come to notice a few suboptimal design decisions using the first version, the rewrite gave me the opportunity to change them.
+
+The second version was in development over 20 days. The code now is partitioned and encapsulated way better, making it easier to change existing functionality or extend it with new functionality, although there still is some room for improvement in the design. According to the source code metrics graph plugin on my Stash server, the code now has about 24 KSLOC, up from about 4.5 KSLOC in version 1.1.2.
+
+The beta label will stay for a few minor version updates longer until I have assured myself the code is stable.
+
+[B][COLOR="#FFEE66"][SIZE="2"]Module system[/SIZE][/COLOR][/B]
+Developers can (halfway) easily add new functionality by writing a module.
+
+[B][COLOR="#FFEE66"][SIZE="2"]Localization system[/SIZE][/COLOR][/B]
+Developers can easily localize their modules in multiple languages.
+
+[COLOR="#A9A9A9"]>[/COLOR] The game data localization (region/zone/lair, mission, boss and fragment names) has been pulled from the game in all three languages the game is localized for: English, German and French.
+
+[COLOR="#A9A9A9"]>[/COLOR] The Organizer and Lookup modules have been localized in English and German by myself; [I]Rexxars[/I] from my cabal In Vino Veritas contributed the French translation. Thank you very much! :)
+
+[B][COLOR="#FFEE66"][SIZE="2"]New menu bar[/SIZE][/COLOR][/B]
+The menu bar has been changed to include a language and module switcher.
+	
+[B][COLOR="#FFEE66"][SIZE="2"]Persistent state system[/SIZE][/COLOR][/B]
+Developers can easily make the internal state of their module persistent, so that when an user accidentally reloads the page, the webapp does not reset. This also gives users the ability to share the current state of the webapp in their browser with other people by copying the page's URL as a nice side effect, although the URLs get quite long fairly fast. Modules have to take care of version-checking their individual persistent state by themselves for backwards-compatibility (using an older link with a newer version of the webapp).
+		
+For people interested in what the gibberish in the URLs represents: The persistent state data is internally held as a complex nested data structure with separate parent nodes for each module. This data structure is serialized to JSON, then compressed with LZW, and the output is then encoded with a special variant of Base64 (- and _ instead of + and / characters; the superfluous = padding characters at the end get stripped automatically). For good measure, a Base36 encoded CRC32 checksum of the LZW compressed payload is appended after the dot.
+	
+[B][COLOR="#FFEE66"][SIZE="2"]Core MVC components[/SIZE][/COLOR][/B]
+The webapp provides MVC components for use by module developers. Currently there is just one, which, given a boss or fragment data class instance, displays/renders an item icon.
+
+[COLOR="Gold"][SIZE="3"]Organizer[/SIZE][/COLOR]
+The main functionality of the webapp is now located in the Organizer module.
+
+[B][COLOR="#FFEE66"][SIZE="2"]Under the hood[/SIZE][/COLOR][/B]
+The code has been changed to be a lot more flexible for integrating possible future game content. For example, lairs can technically include an arbitrary number of bosses. The only limitation is the width of the pick table, as you can only put in so many item icon columns before exceeding the overall module width.
+
+[B][COLOR="#FFEE66"][SIZE="2"]Help / How-to removed[/SIZE][/COLOR][/B]
+The extensive guide with screenshots has been removed. Instead, the module now includes somewhat short help text in places where the interface/behavior might not be self-explanatory. If user feedback on this is mostly negative, I might bring an updated version of the old long guide back into the module.
+
+[B][COLOR="#FFEE66"][SIZE="2"]Lair selection menu moved[/SIZE][/COLOR][/B]
+The menu has been moved out of the menu bar as it is now reserved for the system.
+
+[B][COLOR="#FFEE66"][SIZE="2"]Boss fragment counts table +/- button alignment[/SIZE][/COLOR][/B]
+The [B]+[/B] and [B]-[/B] buttons' positions are fixed now and don't float around the numbers in the middle, which should make it less annoying entering fragment counts greater than 9. You previously had to move your mouse to follow the button moving to the right.
+		
+[B][COLOR="#FFEE66"][SIZE="2"]Participants / Pick table merged[/SIZE][/COLOR][/B]
+The two side-by-side blocks have been merged.
+
+[COLOR="#A9A9A9"]>[/COLOR] Checkboxes for declaring a player's (in)ability to turn in particular missions have been removed; now you can click the respective fragment icon to toggle this.
+
+[COLOR="#A9A9A9"]>[/COLOR] The "check off received fragments" feature has been removed. It turned out to not be really useful. From my experiences being a fragment holder using the webapp in the past few months, you hardly have any time to check off each fragment after someone has traded you his set of mission rewards - as soon as the trade window closes the next one pops up instantly usually, and you still have to manually stack the just-received fragments or you are very likely running out of inventory space. I would be forced to make people wait longer for me to accept trades if I wanted to actually check off the fragments.
+
+[COLOR="#A9A9A9"]>[/COLOR] Overly restrictive participant name rejection has been made more lenient.
+The only requirements now are that names be unique, are at least one character long and only consist of the characters A-Z, a-z, 0-9, the dash (-) and the underscore (_).
+
+[COLOR="#A9A9A9"]>[/COLOR] You can now mass-import player names from an ingame chat log excerpt.
+Copy any number of chat log lines from the ingame chat and paste it in the webapp. Any speaker found within this chat log excerpt will be added as a participant. So if you're lazy, tell your group to put an X or something in chat, then copy all their chat messages into the app.
+
+[B][COLOR="#FFEE66"][SIZE="2"]Output[/SIZE][/COLOR][/B]
+You can now choose a separate localization to use when generating the chat script, independent of what language the webapp has been set to.
+
+This is meant for people using the German or French client who feel more comfortable using TSW Lair Manager in their native language, but are doing lairs with a mixed-language group of players who prefer or can only understand English.
+
+The default setting is English, and if you change the webapp's language via the menu bar, it will not automatically change the chat script localization setting.
+			
+[COLOR="#A9A9A9"]>[/COLOR] You can now choose a sorting style for the contents of the chat script.
+
+The new default is sorting by participant, where each participant has all his assigned fragments clustered together so people receiving the script don't have to scroll the chat log that much. Previously, every participant had to find his name thrice (as often as how many bosses there are) in the usually quite long output list; now they only have to find their name once.
+
+The old sorting style of sorting by boss/mission is still available.
+
+[COLOR="Gold"][SIZE="3"]Lookup[/SIZE][/COLOR]
+There is another module with new functionality: Looking up fragments and bosses.
+
+You can select any lair or regional boss and any lair or regional fragment from a list and immediately see associated information: From what boss(es) does the fragment drop, what boss is this fragment from, what regional fragments does this lair boss drop, along with links to related things like other bosses from the lair the currently selected boss/fragment is from.
+
+Especially the regional fragment drop info should be very useful.
+Huge thanks to [I]Dott[/I] & [I]Jermaine[/I] who arduously gathered data and provided me with their drop table! :)
+
+
+[B][SIZE="4"][COLOR="Sienna"]Usage[/COLOR][/SIZE][/B]
+
+I'll go out on a limb and say this thing is self-explanatory now, and where not it includes short info texts.
+
+If something is still confusing for you, please say so. If I get enough feedback that a particular aspect isn't explained well, I'll add more info.
+
+
+[B][SIZE="4"][COLOR="Sienna"]Development[/COLOR][/SIZE][/B]
+
+Code is, already by the nature of the used technologies/languages, open source.
+
+[CENTER][COLOR="DeepSkyBlue"]You can view the repository at
+[URL="http://github.com/julianrupp/tswlairmgr"][COLOR="#66ccff"]http://github.com/julianrupp/tswlairmgr[/COLOR][/URL].[/COLOR][/CENTER]
+
+As I'm not really into web development that much anymore - and when I was I focused mainly on server side scripting - my JavaScript is probably far from beautiful, but it should do the job.
+
+In the first version, which I wrote in only 5 days, I focused more on getting out an initial version quickly rather than on strict encapsulation, so things were [I]very[/I] tightly interwoven and would probably have made any serious software architect run away screaming. I figured that the webapp wouldn't become so big in size in the initial release so that it'd still be viable to refactor or rewrite everything later on when the need for it actually comes.
+
+...Which then happened with the regional fragment lookup functionality I wanted to implement.
+I spent a lot more time on thinking about how to structure, encapsulate and interconnect things best. However, many of the paths I paved aren't quite paved all the way to the end. Given their positions in the chain however, it'd be an easy exercise to refactor those parts if that code part is extended.
+
+
+[B][SIZE="4"][COLOR="Sienna"]Feature Ideas[/COLOR][/SIZE][/B]
+
+[B]Open:[/B]
+
+[LIST]
+[*]An ingame addon that exports inventory (fragment counts) and group/raid information (probably best done separately) as a text string to copy and paste into TSWLM. I can't make game addons myself – if anyone with the necessary skills wants to do it, hit me up for coordination :)
+[/LIST]
+
+[B]Done:[/B]
+
+[LIST]
+[*]Add regional fragment information (which lair boss drops which regional fragment) [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
+[*]Add a batch import feature for participant names by copying & pasting a chat excerpt [COLOR="#A9A9A9"](Proposed by Grimmy on the forums)[/COLOR] [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
+[*]Add crash safety and sharing ability by using URL hashes to set the state of the webapp. [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
+[*]Align +/- buttons left and right rather than having them centered together with the numbers. [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
+[*]Add a language selector and translate the webapp into German (can do that one myself) and maybe French. [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
+[*]Include the howto directly in the webapp, accessible via a small button in the top bar and displayed in an overlay. [COLOR="Lime"][B][I]1.1.0b[/I][/B][/COLOR]
+[*]Make the drop shadow on the fragment icon labels stronger for better readability on certain fragments. [COLOR="#A9A9A9"](Proposed by Gridviper in-game)[/COLOR] [COLOR="Lime"][B][I]1.0.3b[/I][/B][/COLOR]
+[/LIST]
+
+[CENTER][IMG]http://i57.tinypic.com/11uzrs9.jpg[/IMG][/CENTER]
+
+[B][SIZE="4"][COLOR="Sienna"]Known Issues[/COLOR][/SIZE][/B]
+
+[LIST]
+[*]Script download won't work in the ingame browser. This is a limitation of the game itself I have no workaround for. But using the ingame browser for this anyway is a very bad idea: It's just too easy to accidentally reset everything by closing the browser window, or just having it forcefully be reloaded (e.g. by zoning). This is still an issue in v2 as the ingame browser even forgets what URL it has visited last.
+[/LIST]
+
+
+[B][SIZE="4"][COLOR="Sienna"]Bug Reports[/COLOR][/SIZE][/B]
+
+...are always welcome.
+
+To help me resolve or clarify the issue(s) as fast as possible however, please try to include as much of the following as possible in your report:
+
+[LIST]
+[*]An elaborate description of the issue. Depending on the type, you can sometimes split this up in "expected behavior" and "actual behavior".
+[*]The state of the webapp in which the problem occurs. This includes selected lair, fragment counts and the list of entered participants together with the state of their availability checkboxes - basically everything. In most cases, the easiest way to to this is by supplying the URL hash (everything after the # sign in your browser's address bar).
+[*]If the issue only happens when doing things in a certain order, describe all the steps you took.
+[*]A screenshot or even video depicting the issue.
+[/LIST]
