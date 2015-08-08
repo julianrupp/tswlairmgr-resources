@@ -108,7 +108,7 @@ The only requirements now are that names be unique, are at least one character l
 Copy any number of chat log lines from the ingame chat and paste it in the webapp. Any speaker found within this chat log excerpt will be added as a participant. So if you're lazy, tell your group to put an X or something in chat, then copy all their chat messages into the app.
 
 [B][COLOR="#FFEE66"][SIZE="2"]Output[/SIZE][/COLOR][/B]
-You can now choose a separate localization to use when generating the chat script, independent of what language the webapp has been set to.
+[COLOR="#A9A9A9"]>[/COLOR] You can now choose a separate localization to use when generating the chat script, independent of what language the webapp has been set to.
 
 This is meant for people using the German or French client who feel more comfortable using TSW Lair Manager in their native language, but are doing lairs with a mixed-language group of players who prefer or can only understand English.
 
