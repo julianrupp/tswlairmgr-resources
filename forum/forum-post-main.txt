@@ -35,7 +35,7 @@ My approach is a tiny webapp, entirely coded in JavaScript so it doesn't require
 
 [COLOR="Gray"](I know, it's not exactly a "mod", but among all the choices I had this seemed like the best subforum to post this in.)[/COLOR]
 
-This second version is a complete rewrite of the first version I wrote back in February 2015.
+This second version, finished in August 2015, is a complete rewrite of the first version I wrote back in February.
 
 [CENTER][COLOR="YellowGreen"][B]An instance of TSW Lair Manager is currently hosted at
 [URL="http://tsw.nex4k.net/lairs/"][COLOR="#99ff00"]http://tsw.nex4k.net/lairs/[/COLOR][/URL].[/B][/COLOR][/CENTER]
@@ -64,9 +64,9 @@ Developers can (halfway) easily add new functionality by writing a module.
 [B][COLOR="#FFEE66"][SIZE="2"]Localization system[/SIZE][/COLOR][/B]
 Developers can easily localize their modules in multiple languages.
 
-[COLOR="#A9A9A9"]>[/COLOR] The game data localization (region/zone/lair, mission, boss and fragment names) has been pulled from the game in all three languages the game is localized for: English, German and French.
+[COLOR="#FFFFFF"]>[/COLOR] The game data localization (region/zone/lair, mission, boss and fragment names) has been pulled from the game in all three languages the game is localized for: English, German and French.
 
-[COLOR="#A9A9A9"]>[/COLOR] The Organizer and Lookup modules have been localized in English and German by myself; [I]Rexxars[/I] from my cabal In Vino Veritas contributed the French translation. Thank you very much! :)
+[COLOR="#FFFFFF"]>[/COLOR] The Organizer and Lookup modules have been localized in English and German by myself; [I]Rexxars[/I] from my cabal In Vino Veritas contributed the French translation. Thank you very much! :)
 
 [B][COLOR="#FFEE66"][SIZE="2"]New menu bar[/SIZE][/COLOR][/B]
 The menu bar has been changed to include a language and module switcher.
@@ -97,24 +97,24 @@ The [B]+[/B] and [B]-[/B] buttons' positions are fixed now and don't float aroun
 [B][COLOR="#FFEE66"][SIZE="2"]Participants / Pick table merged[/SIZE][/COLOR][/B]
 The two side-by-side blocks have been merged.
 
-[COLOR="#A9A9A9"]>[/COLOR] Checkboxes for declaring a player's (in)ability to turn in particular missions have been removed; now you can click the respective fragment icon to toggle this.
+[COLOR="#FFFFFF"]>[/COLOR] Checkboxes for declaring a player's (in)ability to turn in particular missions have been removed; now you can click the respective fragment icon to toggle this.
 
-[COLOR="#A9A9A9"]>[/COLOR] The "check off received fragments" feature has been removed. It turned out to not be really useful. From my experiences being a fragment holder using the webapp in the past few months, you hardly have any time to check off each fragment after someone has traded you his set of mission rewards - as soon as the trade window closes the next one pops up instantly usually, and you still have to manually stack the just-received fragments or you are very likely running out of inventory space. I would be forced to make people wait longer for me to accept trades if I wanted to actually check off the fragments.
+[COLOR="#FFFFFF"]>[/COLOR] The "check off received fragments" feature has been removed. It turned out to not be really useful. From my experiences being a fragment holder using the webapp in the past few months, you hardly have any time to check off each fragment after someone has traded you his set of mission rewards - as soon as the trade window closes the next one pops up instantly usually, and you still have to manually stack the just-received fragments or you are very likely running out of inventory space. I would be forced to make people wait longer for me to accept trades if I wanted to actually check off the fragments.
 
-[COLOR="#A9A9A9"]>[/COLOR] Overly restrictive participant name rejection has been made more lenient.
+[COLOR="#FFFFFF"]>[/COLOR] Overly restrictive participant name rejection has been made more lenient.
 The only requirements now are that names be unique, are at least one character long and only consist of the characters A-Z, a-z, 0-9, the dash (-) and the underscore (_).
 
-[COLOR="#A9A9A9"]>[/COLOR] You can now mass-import player names from an ingame chat log excerpt.
+[COLOR="#FFFFFF"]>[/COLOR] You can now mass-import player names from an ingame chat log excerpt.
 Copy any number of chat log lines from the ingame chat and paste it in the webapp. Any speaker found within this chat log excerpt will be added as a participant. So if you're lazy, tell your group to put an X or something in chat, then copy all their chat messages into the app.
 
 [B][COLOR="#FFEE66"][SIZE="2"]Output[/SIZE][/COLOR][/B]
-[COLOR="#A9A9A9"]>[/COLOR] You can now choose a separate localization to use when generating the chat script, independent of what language the webapp has been set to.
+[COLOR="#FFFFFF"]>[/COLOR] You can now choose a separate localization to use when generating the chat script, independent of what language the webapp has been set to.
 
 This is meant for people using the German or French client who feel more comfortable using TSW Lair Manager in their native language, but are doing lairs with a mixed-language group of players who prefer or can only understand English.
 
 The default setting is English, and if you change the webapp's language via the menu bar, it will not automatically change the chat script localization setting.
 			
-[COLOR="#A9A9A9"]>[/COLOR] You can now choose a sorting style for the contents of the chat script.
+[COLOR="#FFFFFF"]>[/COLOR] You can now choose a sorting style for the contents of the chat script.
 
 The new default is sorting by participant, where each participant has all his assigned fragments clustered together so people receiving the script don't have to scroll the chat log that much. Previously, every participant had to find his name thrice (as often as how many bosses there are) in the usually quite long output list; now they only have to find their name once.
 
@@ -156,6 +156,9 @@ I spent a lot more time on thinking about how to structure, encapsulate and inte
 [B]Open:[/B]
 
 [LIST]
+[*]An alternative link for sharing, making it as short as possible by only including state information of the currently active module in the data payload; maybe even more by stripping that data of less-relevant information, e.g. in the Organizer module all mission availability info and fragment counts not linked to the currently selected lair.
+[*]A click history (to provide a "back" button) in the Lookup module.
+[*]A second option for data persistence by providing buttons for saving state to, and loading from, a cookie.
 [*]An ingame addon that exports inventory (fragment counts) and group/raid information (probably best done separately) as a text string to copy and paste into TSWLM. I can't make game addons myself – if anyone with the necessary skills wants to do it, hit me up for coordination :)
 [/LIST]
 
@@ -163,12 +166,12 @@ I spent a lot more time on thinking about how to structure, encapsulate and inte
 
 [LIST]
 [*]Add regional fragment information (which lair boss drops which regional fragment) [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
-[*]Add a batch import feature for participant names by copying & pasting a chat excerpt [COLOR="#A9A9A9"](Proposed by Grimmy on the forums)[/COLOR] [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
+[*]Add a batch import feature for participant names by copying & pasting a chat excerpt [COLOR="#808080"][I](Proposed by [URL=https://forums.thesecretworld.com/member.php?90310-Grimmy]Grimmy[/URL] on the forums)[/I][/COLOR] [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
 [*]Add crash safety and sharing ability by using URL hashes to set the state of the webapp. [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
 [*]Align +/- buttons left and right rather than having them centered together with the numbers. [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
 [*]Add a language selector and translate the webapp into German (can do that one myself) and maybe French. [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
 [*]Include the howto directly in the webapp, accessible via a small button in the top bar and displayed in an overlay. [COLOR="Lime"][B][I]1.1.0b[/I][/B][/COLOR]
-[*]Make the drop shadow on the fragment icon labels stronger for better readability on certain fragments. [COLOR="#A9A9A9"](Proposed by Gridviper in-game)[/COLOR] [COLOR="Lime"][B][I]1.0.3b[/I][/B][/COLOR]
+[*]Make the drop shadow on the fragment icon labels stronger for better readability on certain fragments. [COLOR="#808080"][I](Proposed by [URL=http://chronicle.thesecretworld.com/character/Gridviper]Gridviper[/URL] in-game)[/I][/COLOR] [COLOR="Lime"][B][I]1.0.3b[/I][/B][/COLOR]
 [/LIST]
 
 [CENTER][IMG]http://i57.tinypic.com/11uzrs9.jpg[/IMG][/CENTER]
