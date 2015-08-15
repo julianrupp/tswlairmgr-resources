@@ -1,25 +1,30 @@
-[B][SIZE="4"][COLOR="Sienna"]New Lookup module screenshots[/COLOR][/SIZE][/B]
+[SIZE="5"][COLOR="DarkOrange"]New features screenshots[/COLOR][/SIZE]
 
-[CENTER]
-[B]Regional boss:[/B]
-[IMG]http://i58.tinypic.com/1nyadg.jpg[/IMG]
+[B][SIZE="4"][COLOR="Sienna"]Lookup module[/COLOR][/SIZE][/B]
 
-[B]Regional fragment:[/B]
-[IMG]http://i57.tinypic.com/2w4d5s4.jpg[/IMG]
+[B][SIZE="2"][COLOR="GoldenRod"]Regional boss:[/COLOR][/SIZE][/B]
 
-[B]Lair boss:[/B]
-[IMG]http://i60.tinypic.com/dmv7zq.jpg[/IMG]
+[CENTER][IMG]http://i58.tinypic.com/1nyadg.jpg[/IMG][/CENTER]
 
-[B]Lair fragment:[/B]
-[IMG]http://i60.tinypic.com/2qi1r20.jpg[/IMG]
-[/CENTER]
+[B][SIZE="2"][COLOR="GoldenRod"]Regional fragment:[/COLOR][/SIZE][/B]
 
-[B][SIZE="4"][COLOR="Sienna"]Chat script sorting styles screenshots[/COLOR][/SIZE][/B]
+[CENTER][IMG]http://i57.tinypic.com/2w4d5s4.jpg[/IMG][/CENTER]
 
-[CENTER]
-[B]By participant (default):[/B]
-[IMG]http://i60.tinypic.com/jfdc3d.jpg[/IMG]
+[B][SIZE="2"][COLOR="GoldenRod"]Lair boss:[/COLOR][/SIZE][/B]
 
-[B]By mission:[/B]
-[IMG]http://i58.tinypic.com/e8k6z6.jpg[/IMG]
-[/CENTER]
+[CENTER][IMG]http://i60.tinypic.com/dmv7zq.jpg[/IMG][/CENTER]
+
+[B][SIZE="2"][COLOR="GoldenRod"]Lair Fragment:[/COLOR][/SIZE][/B]
+
+[CENTER][IMG]http://i60.tinypic.com/2qi1r20.jpg[/IMG][/CENTER]
+
+
+[B][SIZE="4"][COLOR="Sienna"]Chat script sorting styles[/COLOR][/SIZE][/B]
+
+[B][SIZE="2"][COLOR="GoldenRod"]By participant (default):[/COLOR][/SIZE][/B]
+
+[CENTER][IMG]http://i60.tinypic.com/jfdc3d.jpg[/IMG][/CENTER]
+
+[B][SIZE="2"][COLOR="GoldenRod"]By mission (old):[/COLOR][/SIZE][/B]
+
+[CENTER][IMG]http://i58.tinypic.com/e8k6z6.jpg[/IMG][/CENTER]

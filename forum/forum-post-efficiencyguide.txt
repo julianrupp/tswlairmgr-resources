@@ -1,0 +1,61 @@
+[SIZE="5"][COLOR="DarkOrange"]Maximum efficiency usage guide[/COLOR][/SIZE]
+
+[I]This is my personal usage pattern, refined by lots of completed lair runs.
+I do use AutoNBG, UltimateCrafter and a second screen.[/I]
+
+[B][SIZE="4"][COLOR="Sienna"]Preparations:[/COLOR][/SIZE][/B]
+[LIST]
+[*][B]Set your TSW display mode to [U]borderless window[/U] in graphics settings.[/B] [COLOR="#808080"]This will make it way faster to alt-tab or otherwise switch the active application between the game and your web browser.[/COLOR]
+[*](Optional) [B]Install the [URL="http://www.curse.com/tsw-mods/tsw/autonbg"]AutoNBG[/URL] mod[/B] or another auto looter and configure it. [COLOR="#808080"]The more you can automate, the more you can focus on the important stuff (fragments) during the run.[/COLOR]
+[*]If you have one, [B]set your auto looter to [U]manual[/U] mode for lair fragments.[/B] [COLOR="#808080"]This will allow you to consciously update fragment counts in the app as they land in your inventory.[/COLOR]
+[*][B]Make sure your inventory has at least [U]27 plus 3 plus X[/U] free slots.[/B] [COLOR="#808080"](Extra slots are for traded fragments & random drops)[/COLOR]
+[*](Optional) [B]Have a second screen[/B], [COLOR="#808080"]and move the browser window with TSW Lair Manager loaded over there.[/COLOR]
+[*](Optional) [B]Install the [URL="http://www.curse.com/tsw-mods/tsw/autocrafter"]UltimateCrafter[/URL] mod.[/B] [COLOR="#808080"]This slightly speeds up the process of making summoning rituals out of the fragments later.[/COLOR]
+[/LIST]
+
+[B][SIZE="4"][COLOR="Sienna"]More general stuff:[/COLOR][/SIZE][/B]
+[LIST]
+[*]Loot rules: [B]Only you roll need on fragments[/B], [COLOR="#808080"]everyone else must roll pass or greed.[/COLOR]
+[*][B]Join the lair run as a fist healer or DPS[/B], [COLOR="#808080"]basically a role that can afford to slack for a few seconds without getting the whole team killed.[/COLOR]
+[/LIST]
+
+[B][SIZE="4"][COLOR="Sienna"]Start:[/COLOR][/SIZE][/B]
+[LIST]
+[*](Optional) [B]If you have leftover fragments from a previous lair run you want to use, grab them from wherever you have stashed them.[/B]
+[*][B]Make a new [U]9x3[/U] inventory bag for the fragments[/B] [COLOR="#808080"]and arrange them just the same as they are displayed in the web app. (You will want to keep traded fragments that land in the default bag visibly separate from the arranged fragments so you can re-stack them faster later.)[/COLOR]
+[*][B]Enter the counts of the fragments you currently have.[/B] [COLOR="#808080"]Because of the way you ordered them earlier, you can enter the counts faster as you can just memorize the counts of a full row/column at a time.[/COLOR]
+[*][B]Form your group/raid/whatever.[/B]
+[*][B]Ask everyone to put some chat message into the group/raid channel[/B] or some other private shared chat channel, then copy all those chat messages and paste them into the web app (click yellow "Import" button, then Ctrl-V) [COLOR="#808080"] to import your team's names[/COLOR].
+[*][B]Check the participant list to make sure you didn't import any unwanted names[/B] [COLOR="#808080"]that happened to post something at the same time.[/COLOR]
+[*][B]Set loot options to system need/greed[/B] and communicate loot rules. [COLOR="#808080"](Everyone pass on fragments except you)[/COLOR]
+[/LIST]
+
+[B][SIZE="4"][COLOR="Sienna"]During the run:[/COLOR][/SIZE][/B]
+[LIST]
+[*][B]Whenever you see a need/greed loot popup for a lair fragment, click need, then instantly click the corresponding + button in the app to update the count.[/B] [COLOR="#808080"]With two screens, it's just a matter of quickly moving the mouse over to the other screen, click, then moving it back; with just one screen, it's alt-tab, click, then alt-tab again.[/COLOR]
+[/LIST]
+
+[B][SIZE="4"][COLOR="Sienna"]Before you generate the script, make sure all entered info is correct and final:[/COLOR][/SIZE][/B]
+[LIST]
+[*]Check the [B]projected number of summoning rituals and missing fragments[/B] for another ritual in the app. [COLOR="#808080"]You might want to decide to farm lair monsters a bit more if you're only missing one or two pieces.[/COLOR]
+[*][B]Ask your team: [U]Does everyone have three mission send reports[/U][/B], excluding those who might have had to turn one in earlier to get a mission item, who coordinated with you? [COLOR="#808080"]If no, update participant mission availability in the app as required.[/COLOR]
+[*][B]Ask your team: [U]Did anyone accidentally get any blue fragments in their inventory?[/U][/B] [COLOR="#808080"]If yes, have them trade the fragments over to you right now; remember to update fragment counts once again.[/COLOR]
+[/LIST]
+
+[B][SIZE="4"][COLOR="Sienna"]Generate the script:[/COLOR][/SIZE][/B]
+[LIST]
+[*][B]Generate the script[/B] and drop it in your TSW's Scripts folder as described in the app's info text, and post it in the appropriate chat channel.
+[*][B]Tell your team to trade the fragments over to you[/B] as soon as they have turned all three missions in with their assigned fragments.
+[/LIST]
+
+[B][SIZE="4"][COLOR="Sienna"]Receive assigned fragments:[/COLOR][/SIZE][/B]
+[LIST]
+[*]Whenever you accept a trade with fragments, [B]immediately stack the just-received fragments[/B] that landed in your default inventory bag with the respective fragment(s) in your dedicated lair fragment bag you created earlier. [COLOR="#808080"]If you don't, you will likely run out of bag space in no time.[/COLOR]
+[/LIST]
+
+[B][SIZE="4"][COLOR="Sienna"]Build boss summoning rituals:[/COLOR][/SIZE][/B]
+[LIST]
+[*]Either use UltimateCrafter's patterns or assemble them manually in your crafting window.
+[/LIST]
+
+[B][SIZE="4"][COLOR="Sienna"]Summon & kill bosses ;)[/COLOR][/SIZE][/B]
