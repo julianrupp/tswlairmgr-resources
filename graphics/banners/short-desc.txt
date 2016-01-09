@@ -1,0 +1,1 @@
+Helps you with organizing lair runs. Keeps track of lair fragment counts and participants, works out who-takes-what automatically. Allows you to browse bosses and fragments to see which fragments are dropped by which bosses, what boss a fragment belongs to, and more.
