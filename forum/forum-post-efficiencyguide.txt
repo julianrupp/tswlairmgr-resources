@@ -3,6 +3,8 @@
 [I]This is my personal usage pattern, refined by lots of completed lair runs.
 I do use AutoNBG, UltimateCrafter and a second screen.[/I]
 
+[B]Please note that I haven't updated this guide yet after the release of the Fragment counts exporter mod.[/B]
+
 [B][SIZE="4"][COLOR="Sienna"]Preparations:[/COLOR][/SIZE][/B]
 [LIST]
 [*][B]Set your TSW display mode to [U]borderless window[/U] in graphics settings.[/B] [COLOR="#808080"]This will make it way faster to alt-tab or otherwise switch the active application between the game and your web browser.[/COLOR]

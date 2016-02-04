@@ -26,7 +26,7 @@ I am aware that there is an addon for the TSW client called [URL="http://www.cur
 [*]it only works in the English client (afaik) and also clashes with any Team Window mods like e.g. [URL="http://forums.thesecretworld.com/showthread.php?t=79381"]Five Alive[/URL], which are essential to many people.
 [/LIST]
 
-I am also aware that lairs were originally meant to be 5-man content, yet you see enough people running this in a raid or even multiple raids.
+I am also aware that lairs were originally meant to be 5-man content, yet you see enough people running this in a raid or even multiple raids; and especially now with the world bosses and lair boss weekly challenges, lairs are more popular than ever before.
 
 
 [B][SIZE="4"][COLOR="Sienna"]Solution[/COLOR][/SIZE][/B]
@@ -45,6 +45,13 @@ It's fine if you just bookmark my instance hosted on my server and use it.
 But if that one becomes unavailable for any reason, please remember that you are welcome to download it from GitHub (see blue link below) and simply host it yourself or just use it offline (unzip all and double click the HTML file directly on your computer, you don't [I]have[/I] to put it on a server).
 
 There is no need for any complicated command line surgeries or other arcane witchcraft, anyone can do that :)
+
+
+[B][SIZE="4"][COLOR="Sienna"]Fragment count exporter mod[/COLOR][/SIZE][/B]
+
+This has been on my feature wishlist for a while, but even though I have a license for Flash Professional CS6, I've always been reluctant to get myself into TSW modding. Now I managed to cobble something together – it's not pretty, but it works.
+
+[CENTER][COLOR="Yellow"][B]Install the [URL="http://github.com/julianrupp/tswlairmgr-export-mod"][COLOR="Yellow"]TSW Lair Manager Export[/COLOR][/URL] mod and you can easily transfer the counts of all the fragments in your inventory and personal bank to the TSW Lair Manager web app.[/B][/COLOR][/CENTER]
 
 
 [B][SIZE="4"][COLOR="Sienna"]New features in v2.0.0 beta[/COLOR][/SIZE][/B]
@@ -157,14 +164,12 @@ I spent a lot more time on thinking about how to structure, encapsulate and inte
 
 [LIST]
 [*]An alternative link for sharing, making it as short as possible by only including state information of the currently active module in the data payload; maybe even more by stripping that data of less-relevant information, e.g. in the Organizer module all mission availability info and fragment counts not linked to the currently selected lair.
-[*]A click history (to provide a "back" button) in the Lookup module.
-[*]A second option for data persistence by providing buttons for saving state to, and loading from, a cookie.
-[*]An ingame addon that exports inventory (fragment counts) and group/raid information (probably best done separately) as a text string to copy and paste into TSWLM. I can't make game addons myself – if anyone with the necessary skills wants to do it, hit me up for coordination :)
 [/LIST]
 
 [B]Done:[/B]
 
 [LIST]
+[*]An ingame addon that exports inventory (fragment counts) as a text string to copy and paste into TSWLM. [COLOR="Lime"][B][I]2.1.0[/I][/B][/COLOR]
 [*]Add regional fragment information (which lair boss drops which regional fragment) [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
 [*]Add a batch import feature for participant names by copying & pasting a chat excerpt [COLOR="#808080"][I](Proposed by [URL=https://forums.thesecretworld.com/member.php?90310-Grimmy]Grimmy[/URL] on the forums)[/I][/COLOR] [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
 [*]Add crash safety and sharing ability by using URL hashes to set the state of the webapp. [COLOR="Lime"][B][I]2.0.0b[/I][/B][/COLOR]
