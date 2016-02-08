@@ -3,13 +3,12 @@
 [I]This is my personal usage pattern, refined by lots of completed lair runs.
 I do use AutoNBG, UltimateCrafter and a second screen.[/I]
 
-[B]Please note that I haven't updated this guide yet after the release of the Fragment counts exporter mod.[/B]
-
 [B][SIZE="4"][COLOR="Sienna"]Preparations:[/COLOR][/SIZE][/B]
 [LIST]
+[*][B]Install the [URL="https://github.com/julianrupp/tswlairmgr-export-mod/releases"]TSW Lair Manager Export[/URL] game mod.[/B] [COLOR="#808080"]With this, you won't have to manually enter/update fragment counts one by one anymore, you just copy some text out of the mod and paste it in the web app to set [I]all[/I] the fragment counts at once.[/COLOR]
 [*][B]Set your TSW display mode to [U]borderless window[/U] in graphics settings.[/B] [COLOR="#808080"]This will make it way faster to alt-tab or otherwise switch the active application between the game and your web browser.[/COLOR]
 [*](Optional) [B]Install the [URL="http://www.curse.com/tsw-mods/tsw/autonbg"]AutoNBG[/URL] mod[/B] or another auto looter and configure it. [COLOR="#808080"]The more you can automate, the more you can focus on the important stuff (fragments) during the run.[/COLOR]
-[*]If you have one, [B]set your auto looter to [U]manual[/U] mode for lair fragments.[/B] [COLOR="#808080"]This will allow you to consciously update fragment counts in the app as they land in your inventory.[/COLOR]
+[*](If not using Export mod) If you have one, [B]set your auto looter to [U]manual[/U] mode for lair fragments.[/B] [COLOR="#808080"]This will allow you to consciously update fragment counts in the app as they land in your inventory.[/COLOR]
 [*][B]Make sure your inventory has at least [U]27 plus 3 plus X[/U] free slots.[/B] [COLOR="#808080"](Extra slots are for traded fragments & random drops)[/COLOR]
 [*](Optional) [B]Have a second screen[/B], [COLOR="#808080"]and move the browser window with TSW Lair Manager loaded over there.[/COLOR]
 [*](Optional) [B]Install the [URL="http://www.curse.com/tsw-mods/tsw/autocrafter"]UltimateCrafter[/URL] mod.[/B] [COLOR="#808080"]This slightly speeds up the process of making summoning rituals out of the fragments later.[/COLOR]
@@ -18,27 +17,29 @@ I do use AutoNBG, UltimateCrafter and a second screen.[/I]
 [B][SIZE="4"][COLOR="Sienna"]More general stuff:[/COLOR][/SIZE][/B]
 [LIST]
 [*]Loot rules: [B]Only you roll need on fragments[/B], [COLOR="#808080"]everyone else must roll pass or greed.[/COLOR]
-[*][B]Join the lair run as a fist healer or DPS[/B], [COLOR="#808080"]basically a role that can afford to slack for a few seconds without getting the whole team killed.[/COLOR]
+[*](If not using Export mod, or planning to update fragments in real time during the run) [B]Join the lair run as a fist healer or DPS[/B], [COLOR="#808080"]basically a role that can afford to slack for a few seconds without getting the whole team killed.[/COLOR]
 [/LIST]
 
 [B][SIZE="4"][COLOR="Sienna"]Start:[/COLOR][/SIZE][/B]
 [LIST]
 [*](Optional) [B]If you have leftover fragments from a previous lair run you want to use, grab them from wherever you have stashed them.[/B]
 [*][B]Make a new [U]9x3[/U] inventory bag for the fragments[/B] [COLOR="#808080"]and arrange them just the same as they are displayed in the web app. (You will want to keep traded fragments that land in the default bag visibly separate from the arranged fragments so you can re-stack them faster later.)[/COLOR]
-[*][B]Enter the counts of the fragments you currently have.[/B] [COLOR="#808080"]Because of the way you ordered them earlier, you can enter the counts faster as you can just memorize the counts of a full row/column at a time.[/COLOR]
+[*][B](Optional) Enter the counts of the fragments you currently have, or, if you use the Export mod, export the fragments from your inventory now and import them into the web app (open the mod, click into the text field, Ctrl-A, Ctrl-C, switch to the web app, click the "Import fragment counts" button at the very top, Ctrl-V).[/B] [COLOR="#808080"]Because of the way you ordered them earlier, you can enter the counts faster as you can just memorize the counts of a full row/column at a time. Doing this now, and updating fragment counts in real time during the run, will allow you to timely make better decisions about whether to farm a bit more after completing missions or not.[/COLOR]
 [*][B]Form your group/raid/whatever.[/B]
-[*][B]Ask everyone to put some chat message into the group/raid channel[/B] or some other private shared chat channel, then copy all those chat messages and paste them into the web app (click yellow "Import" button, then Ctrl-V) [COLOR="#808080"] to import your team's names[/COLOR].
+[*][B]Ask everyone to put some chat message into the group/raid channel[/B] or some other private shared chat channel, then copy all those chat messages and paste them into the web app (click yellow "Import" button in the assignment table box, then Ctrl-V) [COLOR="#808080"] to import your team's names[/COLOR].
 [*][B]Check the participant list to make sure you didn't import any unwanted names[/B] [COLOR="#808080"]that happened to post something at the same time.[/COLOR]
 [*][B]Set loot options to system need/greed[/B] and communicate loot rules. [COLOR="#808080"](Everyone pass on fragments except you)[/COLOR]
 [/LIST]
 
 [B][SIZE="4"][COLOR="Sienna"]During the run:[/COLOR][/SIZE][/B]
 [LIST]
-[*][B]Whenever you see a need/greed loot popup for a lair fragment, click need, then instantly click the corresponding + button in the app to update the count.[/B] [COLOR="#808080"]With two screens, it's just a matter of quickly moving the mouse over to the other screen, click, then moving it back; with just one screen, it's alt-tab, click, then alt-tab again.[/COLOR]
+[*](Optional) [B]Whenever you see a need/greed loot popup for a lair fragment, click need, then instantly click the corresponding + button in the app to update the count.[/B] [COLOR="#808080"]With two screens, it's just a matter of quickly moving the mouse over to the other screen, click, then moving it back; with just one screen, it's alt-tab, click, then alt-tab again. Doing this during the lair run will allow you to check your progress towards full fragment sets in real time, which might influence your farming behavior (e.g. to get that one more summon you only need one more fragment for).[/COLOR]
 [/LIST]
 
 [B][SIZE="4"][COLOR="Sienna"]Before you generate the script, make sure all entered info is correct and final:[/COLOR][/SIZE][/B]
 [LIST]
+[*](If using Export mod) [B]Export the fragment counts[/B] in your inventory again and import them into the web app. [COLOR="#808080"][/COLOR]
+[*]If you're not using the Export mod and neither chose to update fragment counts as loot landed in your inventory during the run, manually update the fragment counts now.
 [*]Check the [B]projected number of summoning rituals and missing fragments[/B] for another ritual in the app. [COLOR="#808080"]You might want to decide to farm lair monsters a bit more if you're only missing one or two pieces.[/COLOR]
 [*][B]Ask your team: [U]Does everyone have three mission send reports[/U][/B], excluding those who might have had to turn one in earlier to get a mission item, who coordinated with you? [COLOR="#808080"]If no, update participant mission availability in the app as required.[/COLOR]
 [*][B]Ask your team: [U]Did anyone accidentally get any blue fragments in their inventory?[/U][/B] [COLOR="#808080"]If yes, have them trade the fragments over to you right now; remember to update fragment counts once again.[/COLOR]
