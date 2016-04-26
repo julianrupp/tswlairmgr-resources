@@ -9,7 +9,7 @@
 
 [B][SIZE="4"][COLOR="Sienna"]Motivation[/COLOR][/SIZE][/B]
 
-So the last time I joined one of my cabal's ([I][URL="http://invinoveritas.corplaunch.com"]In Vino Veritas[/URL][/I]) lair runs, we had like 20 or so people coming.
+So that one time I joined one of my former cabal's lair runs, we had like 20 or so people coming.
 
 After we finished missions, it took our fragment holder [I]quite[/I] some time (talking of about a quarter of an hour) to get an overview and assign fragments to take to all people. This was when I got the idea to create a little helper tool so that:
 
@@ -49,7 +49,7 @@ There is no need for any complicated command line surgeries or other arcane witc
 
 [B][SIZE="4"][COLOR="Sienna"]Fragment count exporter mod[/COLOR][/SIZE][/B]
 
-This has been on my feature wishlist for a while, but even though I have a license for Flash Professional CS6, I've always been reluctant to get myself into TSW modding. Now I managed to cobble something together – it's not pretty, but it works.
+This has been on my feature wishlist for a while, but even though I have a license for Flash Professional CS6 since a couple of years already as part of the Master Collection, I've always been reluctant to get myself into TSW modding because I strongly object the backing technology. But now I got myself to cobble something together – it's not pretty, but it works.
 
 [CENTER][COLOR="Yellow"][B]Install the [URL="http://github.com/julianrupp/tswlairmgr-export-mod"][COLOR="Yellow"]TSW Lair Manager Export[/COLOR][/URL] mod and you can easily transfer the counts of all the fragments in your inventory and personal bank to the TSW Lair Manager web app.[/B][/COLOR][/CENTER]
 
@@ -59,11 +59,11 @@ This has been on my feature wishlist for a while, but even though I have a licen
 [COLOR="Gold"][SIZE="3"]New code base[/SIZE][/COLOR]
 The code has been completely rewritten.
 
-Main priority for the first version was speed; I wanted to finish it as soon as possible, which I did in 5 days. Naturally, throwing stuff together this fast does have its drawbacks – the resulting code was tightly interwoven and very unflexible regarding possible code changes. Besides, I've come to notice a few suboptimal design decisions using the first version, the rewrite gave me the opportunity to change them.
+Main priority for the first version was speed; I wanted to finish it as soon as possible, which I did in 5 days. Naturally, throwing stuff together this fast does have its drawbacks – the resulting code was tightly interwoven and very unflexible regarding possible code changes. It was a horrid mess that would have made any halfway professional software developer run away screaming. Besides, I've come to notice a few suboptimal design decisions using the first version, the rewrite gave me the opportunity to change them.
 
 The second version was in development over 20 days. The code now is partitioned and encapsulated way better, making it easier to change existing functionality or extend it with new functionality, although there still is some room for improvement in the design. According to the source code metrics graph plugin on my Stash server, the code now has about 24 KSLOC, up from about 4.5 KSLOC in version 1.1.2.
 
-The beta label will stay for a few minor version updates longer until I have assured myself the code is stable.
+With version 2.0.8, I've finally dropped the "beta" label. Since the release of version 2.0, a reasonable amount of time has passed with a lot of people using the software, and I haven't received any bug reports from those. This makes me confident that the code is sufficiently stable to no longer deserve that label.
 
 [B][COLOR="#FFEE66"][SIZE="2"]Module system[/SIZE][/COLOR][/B]
 Developers can (halfway) easily add new functionality by writing a module.
@@ -154,7 +154,7 @@ As I'm not really into web development that much anymore - and when I was I focu
 
 In the first version, which I wrote in only 5 days, I focused more on getting out an initial version quickly rather than on strict encapsulation, so things were [I]very[/I] tightly interwoven and would probably have made any serious software architect run away screaming. I figured that the webapp wouldn't become so big in size in the initial release so that it'd still be viable to refactor or rewrite everything later on when the need for it actually comes.
 
-...Which then happened with the regional fragment lookup functionality I wanted to implement.
+...which then happened with the regional fragment lookup functionality I wanted to implement.
 I spent a lot more time on thinking about how to structure, encapsulate and interconnect things best. However, many of the paths I paved aren't quite paved all the way to the end. Given their positions in the chain however, it'd be an easy exercise to refactor those parts if that code part is extended.
 
 
